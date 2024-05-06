@@ -40,7 +40,7 @@ PROJECT_APPS = [
 
 THIRD_PARTY_APPS = [
     'corsheaders',
-    'rest-framework',
+    'rest_framework',
     'ckeditor',
     'ckeditor_uploader',
 ]
@@ -78,7 +78,7 @@ ROOT_URLCONF = "core.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [os.path.join(BASE_DIR, 'build')],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
